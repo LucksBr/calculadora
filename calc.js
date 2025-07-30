@@ -7,7 +7,7 @@ let buttonEquals = document.querySelector(".blue")
 let textTela = "0"
 
 let adicionarValorNaTela = (button) => {
-    let valorButton = button.path[0].value
+    let valorButton = button.target.value
 
     if(isOperator(valorButton) && ultimoValorIsOperator() ) {
         valorButton = ""
